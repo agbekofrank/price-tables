@@ -2,40 +2,43 @@
     font-family: 'Nunito', sans-serif;
     font-size: medium;
     height: 100%;
-    color: rgb(255, 255, 255);
-    background-image: url("/assets/img/sky-nature-starry-night-night-wallpaper-preview.jpg");
-    background-blend-mode: lighten;
+    /* color: rgb(255, 255, 255); */
 }
 
 .container {
     margin: 120px auto;
+    padding: 40px;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: #e9eeee;
 }
 h2{
     font-weight: 800;
     font-size: 2rem;
     margin-top: 8px;
-    color: #ffffff;
+    color: #697a64;
 }
 
 .card {
     width: 310px;
     height: 400px;
-    border: 1px dotted rgb(15, 104, 206);
+    /* border: 1px solid rgb(15, 104, 206); */
     align-items: center;
     text-align: center;
     border-radius: 10px;
-    /* padding: 20px auto; */
-
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    transition: all 400ms;
     
 }
+.card:hover{
+    transform: scale(1.02);
+}
 .card-1{
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(218, 218, 218);
 }
 .card-2{
     background-color: #a4a4bf;
@@ -43,30 +46,12 @@ h2{
 
 }
 .card-3{
-    background-color: #a3546d;
+    background-color: #a09e9f;
 }
 #c3h2, .c3am{
     color: #5c4a72;
 }
 
-
-.card-content-2{
-    width: 50%;
-    height: 40%;
-    border-radius: 47%;
-    border: 5px solid #8b9b02;
-}
-.card-content-2, .h2{
-    color: #00743f;
-    font-weight: 900;
-    font-size: 2rem;
-    /* color: #f2a104; */
-}
-.amount{
-    width: 100%;
-    margin: auto;
-
-}
 .card-content-3{
     min-width: 25%;
     border-radius: 5px;
@@ -74,8 +59,28 @@ h2{
     cursor: pointer;
     color: #192e5b;
     background-color: #c4c8ca;
-    font-size: 1.5rem;
-    font-weight: 600;
+    /* font-size: 1.5rem; */
+    /* font-weight: 200; */
 
 
+}
+.card-content-1{
+    margin-top: 0px;
+    width: 100%;
+    background-color: #7bd0ed;
+    border-radius: 10px 10px 0 0;
+}
+
+img{
+    width: 160px;
+    /* height: 130px; */
+    border-radius: 40%;
+}
+.price{
+    margin-top: 0;
+    color: #132f25;
+}
+ul{
+    list-style-position: initial;
+    list-style-type: square;
 }
